@@ -24,8 +24,7 @@ export default class Home extends Component {
     handleScroll(event) {
         const scrollTop = event.srcElement.body.scrollTop;
         const scrollHeight = event.srcElement.body.scrollHeight;
-        const relativePosition = scrollTop / scrollHeight;
-        if (relativePosition > 0.7 && this.state.allowScroll) {
+        if (scrollHeight - scrollTop < 1000 && this.state.allowScroll) {
             console.log('scrolling...');
             this.setState({
                 page:this.state.page + 1,
