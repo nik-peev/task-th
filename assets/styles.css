@@ -1,0 +1,56 @@
+.photo {
+    display: inline-block;
+    width:300px;
+}
+
+.photo__image {
+    width:300px;
+    height: 300px;
+}
+
+.photo__title, .photo__text, .photo__owner {
+    display: inline-block;
+    max-width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.photo__text {
+    margin: 0 4px;
+}
+
+.photo__tags {
+    height: 60px;
+}
+
+.photo__content {
+    height: 40px;
+}
+
+.photo__content, .photo__tags {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.photo__content--nothing, .photo__tags--nothing {
+    color: grey;
+    font-style: italic;
+}
+
+.photo__tag {
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 3px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.toast {
+    position: fixed;
+    left:50%;
+    top: 95%;
+    background: black;
+    color: yellow;
+    opacity: .7;
+}
